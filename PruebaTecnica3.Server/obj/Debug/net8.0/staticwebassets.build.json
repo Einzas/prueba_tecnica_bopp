@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "y76apRL+A6OzevZ8TKkDA9XqrnSPMViWR1Eon4zeVQI=",
+  "Source": "PruebaTecnica3.Server",
+  "BasePath": "_content/PruebaTecnica3.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "G:\\source\\repos\\PruebaTecnica3\\pruebatecnica3.client\\pruebatecnica3.client.esproj",
+      "Version": 2,
+      "Source": "pruebatecnica3.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

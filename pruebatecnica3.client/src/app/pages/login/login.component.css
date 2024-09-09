@@ -1,0 +1,10 @@
+.formu {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+    max-width: 630px;
+    padding: 15px;
+    margin: auto;
+}

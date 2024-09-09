@@ -1,0 +1,46 @@
+<div class="card-container">
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Registro</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="formu" [formGroup]="formRegistro">
+
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Nombre" formControlName="nombre">
+
+                </mat-form-field>
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Apellido" formControlName="apellido">
+
+                </mat-form-field>
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Dni" formControlName="dni">
+
+                </mat-form-field>
+                <!-- Fecha Nacimiento -->
+                <mat-form-field class="full-width">
+                    <input matInput [matDatepicker]="picker" placeholder="Fecha Nacimiento"
+                        formControlName="fechaNacimiento">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+
+                </mat-form-field>
+
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="email" formControlName="email">
+
+                </mat-form-field>
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Contraseña" formControlName="contrasena" type="password">
+
+                </mat-form-field>
+                <button mat-flat-button color="primary" (click)="registarse()">Registrarse</button>
+                <button mat-flat-button color="accent" (click)="login()">Login</button>
+            </form>
+        </mat-card-content>
+
+    </mat-card>
+
+</div>

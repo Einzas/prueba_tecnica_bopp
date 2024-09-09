@@ -1,0 +1,66 @@
+<div class="card-container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                <h4>Inicio</h4>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>Bienvenido a la aplicación de gestión de usuarios.</p>
+
+            <hr>
+            <table mat-table [dataSource]="usuarios" class="mat-elevation-z8">
+                <ng-container matColumnDef="id">
+                    <th mat-header-cell *matHeaderCellDef> ID </th>
+                    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="nombre">
+                    <th mat-header-cell *matHeaderCellDef> Nombre </th>
+                    <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="apellido">
+                    <th mat-header-cell *matHeaderCellDef> Apellido </th>
+                    <td mat-cell *matCellDef="let element"> {{element.apellido}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="dni">
+                    <th mat-header-cell *matHeaderCellDef> DNI </th>
+                    <td mat-cell *matCellDef="let element"> {{element.dni}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="email">
+                    <th mat-header-cell *matHeaderCellDef> Email </th>
+                    <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="rol">
+                    <th mat-header-cell *matHeaderCellDef> Rol </th>
+                    <td mat-cell *matCellDef="let element"> {{element.rol}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="fechaNacimiento">
+                    <th mat-header-cell *matHeaderCellDef> Fecha de Nacimiento </th>
+                    <td mat-cell *matCellDef="let element"> {{element.fechaNacimiento}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="estado">
+                    <th mat-header-cell *matHeaderCellDef> Estado </th>
+                    <td mat-cell *matCellDef="let element"> {{element.estado}} </td>
+                </ng-container>
+
+                <!-- <ng-container matColumnDef="acciones">
+                    <th mat-header-cell *matHeaderCellDef> Acciones </th>
+                    <td mat-cell *matCellDef="let element">
+                        <button mat-button color="primary">Editar</button>
+                        <button mat-button color="warn">Eliminar</button>
+                    </td>
+                </ng-container> -->
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </mat-card-content>
+    </mat-card>
+</div>
